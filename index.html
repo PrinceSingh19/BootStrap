@@ -44,7 +44,7 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-sm-6"><img class="img-fluid" src="img/logo.png" alt="logo"></div>
                             <div class="col-12 col-sm-6">
-                                <a href="#reserve" class="btn btn-block btn-warning" data-toggle="button" data-target=""="reserve" role="button">Reserve Table</a>
+                                <a href="#reserve" class="btn btn-block btn-warning" role="button" id='reserves' data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 4567891</strong>" data-placement="bottom">Reserve Table</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="row row-content justify-content-center" id="reserve" data-toggle="reserve">
+            <div class="row row-content justify-content-center" id="reserve" data-toggle="#reserve">
                 <div class="col-12 col-sm-9">
                     <form class="card" > 
                         <div class=" form-group bg-primary card-header bg-warning text-white">
@@ -201,6 +201,13 @@
         <!--jQuery first, then Popper.js, then Bootstrap.js-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            let tool = document.getElementById('reserves');
+            function tooltips(){
+                return new bootstrap.Tooltip(tool);
+            }
+            tooltips();
+        </script>
     </body>
 
 </html>
