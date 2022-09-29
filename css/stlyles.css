@@ -50,3 +50,15 @@ h3>a:hover {
 h3>a{
     color: black;
 }
+.carousel{
+    background-color: #512da8;
+}
+.carousel-item{
+    height: 200px;
+}
+.carousel-item img{
+    min-height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
