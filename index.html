@@ -88,14 +88,10 @@
         </div>
     </header>
     <div class="container">
-        <div class="row row-content">
+        <div class="row row-content" >
             <div class="col">
                 <div id="carouselIndicator" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-target="#carouselIndicator" data-slide-to="0" class="active"></button>
-                        <button type="button" data-target="#carouselIndicator" data-slide-to="1"></button>
-                        <button type="button" data-target="#carouselIndicator" data-slide-to="2"></button>
-                    </div>
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/uthappizza.png" class="d-block img-fluid" alt="Uthapizza">
@@ -120,6 +116,11 @@
                             </div>
                         </div>
                     </div>
+                    <ol class="carousel-indicators"> 
+                        <li data-target="#carouselIndicator" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicator" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicator" data-slide-to="2"></li>
+                    </ol> 
                     <button class="carousel-control-prev" type="button" data-target="#carouselIndicator" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
@@ -137,6 +138,8 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="Uthapizza">
                     <div class="media-body">
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger ml-2 mr-1">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
