@@ -62,3 +62,9 @@ h3>a{
     left: 0;
     position: absolute;
 }
+#carouselButtons{
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    
+}
