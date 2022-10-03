@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <label for="password" class="sr-only  col-form-label">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="cc-csc">
                             </div>
                             <div class="col-sm-auto">
                                 <div class="form-check">
@@ -343,31 +343,7 @@
     <!--jQuery first, then Popper.js, then Bootstrap.js-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const btnToggle = document.querySelector("#btnModalLogin");
-        const btnToggleReserve = document.querySelector("#btnModalReserve")
-        const btnDismiss = document.querySelectorAll(".dismiss")
-        const btnDismissReserve = document.querySelectorAll(".dismissReserve")
-        const myModalLogin = new bootstrap.Modal(document.getElementById("modalEx"));
-        const myModalReserve = new bootstrap.Modal(document.getElementById("reserve"));
-
-        btnToggleReserve.addEventListener("click", function () {
-            myModalReserve.show()
-        })
-        btnToggle.addEventListener("click", function () {
-            myModalLogin.show();
-        })
-        btnDismiss.forEach(ele => {
-            ele.addEventListener("click", function () {
-                myModalLogin.hide();
-            })
-        });
-        btnDismissReserve.forEach(ele => {
-            ele.addEventListener("click", function () {
-                myModalReserve.hide();
-            })
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
