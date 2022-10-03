@@ -12,6 +12,7 @@
         btnToggle.addEventListener("click", function () {
             myModalLogin.toggle();
         });
+        //Do not use arrow function otherwise it will not work after depoyment
         btnDismiss.forEach(function(ele){
             ele.addEventListener("click", function () {
                 myModalLogin.hide();
