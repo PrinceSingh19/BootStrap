@@ -7,18 +7,18 @@
         const myModalReserve = new bootstrap.Modal(document.getElementById("reserve"));
 
         btnToggleReserve.addEventListener("click", function () {
-            myModalReserve.show();
-        })
+            myModalReserve.toggle();
+        });
         btnToggle.addEventListener("click", function () {
-            myModalLogin.show();
-        })
-        btnDismiss.forEach(ele => {
+            myModalLogin.toggle();
+        });
+        btnDismiss.forEach(function(ele){
             ele.addEventListener("click", function () {
                 myModalLogin.hide();
-            })
+            });
         });
-        btnDismissReserve.forEach(ele => {
+        btnDismissReserve.forEach(function(ele){
             ele.addEventListener("click", function () {
                 myModalReserve.hide();
-            })
+            });
         });
