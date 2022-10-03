@@ -24,3 +24,4 @@
                 myModalReserve.hide();
             });
         });
+        //end of script
