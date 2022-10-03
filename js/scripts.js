@@ -18,6 +18,7 @@
                 myModalLogin.hide();
             });
         });
+        //Do not use arrow function otherwise it will not work after depoyment
         btnDismissReserve.forEach(function(ele){
             ele.addEventListener("click", function () {
                 myModalReserve.hide();
