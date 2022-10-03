@@ -1,6 +1,5 @@
-(function(){
-    "use strict";
-    const btnToggle = document.querySelector("#btnModalLogin");
+
+        const btnToggle = document.querySelector("#btnModalLogin");
         const btnToggleReserve = document.querySelector("#btnModalReserve");
         const btnDismiss = document.querySelectorAll(".dismiss");
         const btnDismissReserve = document.querySelectorAll(".dismissReserve");
@@ -23,4 +22,3 @@
                 myModalReserve.hide();
             })
         });
-})();
